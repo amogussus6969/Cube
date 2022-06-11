@@ -66,3 +66,16 @@ def condition(arg1, comparasion, arg2, code):
             return True
         else:
             return False
+
+
+def add(arg1, arg2):
+    return arg1 + arg2
+
+def sub(arg1, arg2):
+    return arg1 - arg2
+
+def mul(arg1, arg2):
+    return arg1 * arg2
+
+def div(arg1, arg2):
+    return arg1 / arg2
