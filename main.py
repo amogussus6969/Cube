@@ -1,6 +1,6 @@
 #Cube a programming language
 
-
+import tkinter
 
 
 
@@ -79,3 +79,14 @@ def mul(arg1, arg2):
 
 def div(arg1, arg2):
     return arg1 / arg2
+
+
+
+class GuiSystem:
+    def createWindow(windowName):
+        compile(windowName + "=tkinter.Tk()")
+    def createButton(surface, buttonName, command):
+        if command == "":
+            compile(buttonName + "=tkinter.Button(" + surface + ")")
+        else:
+            compile(buttonName + "=tkinter.Button(" + surface + ", command='" + command + "')")
